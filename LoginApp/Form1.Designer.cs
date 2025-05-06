@@ -68,7 +68,8 @@
             namaPetualang_value.Size = new Size(496, 27);
             namaPetualang_value.TabIndex = 2;
             namaPetualang_value.Enter += namaPetualang_value_Enter;
-            namaPetualang_value.Leave += NamaPetualang_value_Leave;
+            namaPetualang_value.Leave += namaPetualang_value_Leave;
+            namaPetualang_value.TextChanged += nama_petualang_value_TextChanged;
             // 
             // codeRahasia_value
             // 
@@ -142,12 +143,6 @@
             ResumeLayout(false);
             PerformLayout();
         }
-
-        private void NamaPetualang_value_Leave(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
 
         private Label label_autentikasi;

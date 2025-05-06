@@ -5,14 +5,22 @@ namespace LoginApp
         public Form1()
         {
             InitializeComponent();
-        }
 
+            this.Load += new EventHandler(Form1_Load);
+        }
         private void namaPetualang_value_Enter(object sender, EventArgs e)
         {
             if (namaPetualang_value.Text == "ISI CODE NAME MU PETUALANG")
             {
                 namaPetualang_value.Text = "";
-                namaPetualang_value.ForeColor = Color.Black; // atau warna teks normal kamu
+                namaPetualang_value.ForeColor = Color.Black;
+            }
+        }
+        private void nama_petualang_value_TextChanged(object sender, EventArgs e)
+        {
+            if (namaPetualang_value.Text != "")
+            {
+                namaPetualang_value.ForeColor = Color.Black;
             }
         }
 
@@ -28,7 +36,7 @@ namespace LoginApp
         private void Form1_Load(object sender, EventArgs e)
         {
             namaPetualang_value.Text = "ISI NAMA MU PETUALANG!!!";
-            namaPetualang_value.ForeColor = Color.Black;
+            namaPetualang_value.ForeColor = Color.Red;
         }
     }
 }
