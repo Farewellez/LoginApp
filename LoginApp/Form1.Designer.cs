@@ -36,6 +36,7 @@
             masuk_button = new Button();
             keluar_button = new Button();
             daftar_button = new Button();
+            LihatPassword = new CheckBox();
             SuspendLayout();
             // 
             // label_autentikasi
@@ -67,9 +68,9 @@
             namaPetualang_value.Name = "namaPetualang_value";
             namaPetualang_value.Size = new Size(496, 27);
             namaPetualang_value.TabIndex = 2;
+            namaPetualang_value.TextChanged += nama_petualang_value_TextChanged;
             namaPetualang_value.Enter += namaPetualang_value_Enter;
             namaPetualang_value.Leave += namaPetualang_value_Leave;
-            namaPetualang_value.TextChanged += nama_petualang_value_TextChanged;
             // 
             // codeRahasia_value
             // 
@@ -77,6 +78,9 @@
             codeRahasia_value.Name = "codeRahasia_value";
             codeRahasia_value.Size = new Size(496, 27);
             codeRahasia_value.TabIndex = 4;
+            codeRahasia_value.TextChanged += codeRahasia_value_TextChanged;
+            codeRahasia_value.Enter += codeRahasia_value_Enter;
+            codeRahasia_value.Leave += codeRahasia_value_Leave;
             // 
             // label_codeRahasia
             // 
@@ -123,12 +127,25 @@
             daftar_button.Text = "Daftar";
             daftar_button.UseVisualStyleBackColor = false;
             // 
+            // Lihat Password
+            // 
+            LihatPassword.AutoSize = true;
+            LihatPassword.Location = new Point(610, 240);
+            LihatPassword.Name = "LihatPassword";
+            LihatPassword.Size = new Size(101, 24);
+            LihatPassword.TabIndex = 8;
+            LihatPassword.Text = "Tampilkan";
+            LihatPassword.UseVisualStyleBackColor = true;
+            LihatPassword.ForeColor = Color.White;
+            LihatPassword.CheckedChanged += LihatPassword_CheckedChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(800, 450);
+            Controls.Add(LihatPassword);
             Controls.Add(daftar_button);
             Controls.Add(keluar_button);
             Controls.Add(masuk_button);
@@ -153,5 +170,6 @@
         private Button masuk_button;
         private Button keluar_button;
         private Button daftar_button;
+        private CheckBox LihatPassword;
     }
 }

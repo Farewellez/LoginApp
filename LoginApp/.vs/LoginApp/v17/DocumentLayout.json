@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{80F9AA51-0703-4E6A-B0EB-CF1588E7FECA}|LoginApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80F9AA51-0703-4E6A-B0EB-CF1588E7FECA}|LoginApp.csproj|d:\\kuliah\\pbo\\latihanwinform\\loginapp_winfrom\\loginapp\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{80F9AA51-0703-4E6A-B0EB-CF1588E7FECA}|LoginApp.csproj|solutionrelative:form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{80F9AA51-0703-4E6A-B0EB-CF1588E7FECA}|LoginApp.csproj|d:\\kuliah\\pbo\\latihanwinform\\loginapp_winfrom\\loginapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80F9AA51-0703-4E6A-B0EB-CF1588E7FECA}|LoginApp.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80F9AA51-0703-4E6A-B0EB-CF1588E7FECA}|LoginApp.csproj|d:\\kuliah\\pbo\\latihanwinform\\loginapp_winfrom\\loginapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{80F9AA51-0703-4E6A-B0EB-CF1588E7FECA}|LoginApp.csproj|d:\\kuliah\\pbo\\latihanwinform\\loginapp_winfrom\\loginapp\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{80F9AA51-0703-4E6A-B0EB-CF1588E7FECA}|LoginApp.csproj|solutionrelative:form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F9AA51-0703-4E6A-B0EB-CF1588E7FECA}|LoginApp.csproj|D:\\KULIAH\\PBO\\LatihanWinform\\LoginApp_Winfrom\\LoginApp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{80F9AA51-0703-4E6A-B0EB-CF1588E7FECA}|LoginApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -47,13 +47,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\KULIAH\\PBO\\LatihanWinform\\LoginApp_Winfrom\\LoginApp\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "D:\\KULIAH\\PBO\\LatihanWinform\\LoginApp_Winfrom\\LoginApp\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAApwIoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T15:23:16.719Z",
               "IsPinned": true,
@@ -67,7 +67,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\KULIAH\\PBO\\LatihanWinform\\LoginApp_Winfrom\\LoginApp\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswDwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T15:56:11.196Z",
               "IsPinned": true,
@@ -75,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.resx",
               "DocumentMoniker": "D:\\KULIAH\\PBO\\LatihanWinform\\LoginApp_Winfrom\\LoginApp\\Form1.resx",
               "RelativeDocumentMoniker": "Form1.resx",
@@ -83,6 +83,7 @@
               "RelativeToolTip": "Form1.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2025-05-06T13:18:28.603Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -97,7 +98,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\KULIAH\\PBO\\LatihanWinform\\LoginApp_Winfrom\\LoginApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T15:43:44.826Z",
               "EditorCaption": ""
