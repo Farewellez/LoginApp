@@ -1,4 +1,4 @@
-namespace LoginApp
+﻿namespace LoginApp
 {
     public partial class Form1 : Form
     {
@@ -35,7 +35,7 @@ namespace LoginApp
                 namaPetualang_value.Text = "ISI CODE NAME MU PETUALANG!!!";
                 namaPetualang_value.ForeColor = Color.Red;
             }
-            if (namaPetualang_value.Text == default_name)
+            if (namaPetualang_value.Text == default_name || namaPetualang_value.ForeColor == Color.Red)
             {
                 namaPetualang_value.Text = "ISI CODE NAME MU PETUALANG!!!";
                 namaPetualang_value.ForeColor = Color.Red;
@@ -49,41 +49,48 @@ namespace LoginApp
             {
                 codeRahasia_value.Text = "";
                 codeRahasia_value.ForeColor = Color.Black;
-                codeRahasia_value.UseSystemPasswordChar = !LihatPassword.Checked;
             }
             if (codeRahasia_value.Text == "CODE MINIMAL 5 KARAKTER!!!")
             {
                 codeRahasia_value.Text = "";
                 codeRahasia_value.ForeColor = Color.Black;
-                codeRahasia_value.UseSystemPasswordChar = !LihatPassword.Checked;
             }
         }
         private void codeRahasia_value_Leave(object sender, EventArgs e)
         {
-            if (codeRahasia_value.Text.Length < 5)
+            if (codeRahasia_value.Text == "" || codeRahasia_value.ForeColor == Color.Red)
             {
                 codeRahasia_value.Text = "CODE MINIMAL 5 KARAKTER!!!";
-                codeRahasia_value.UseSystemPasswordChar = false;
                 codeRahasia_value.ForeColor = Color.Red;
+                codeRahasia_value.PasswordChar = '\0';
+            }
+                if (codeRahasia_value.Text.Length < 5 && codeRahasia_value.ForeColor == Color.Black)
+            {
+                codeRahasia_value.PasswordChar = '\0';
             }
         }
         private void codeRahasia_value_TextChanged(object sender, EventArgs e)
         {
-            if (codeRahasia_value.Text != "")
+            if (codeRahasia_value.Text != "" && !LihatPassword.Checked)
             {
                 codeRahasia_value.ForeColor = Color.Black;
-                codeRahasia_value.UseSystemPasswordChar = !LihatPassword.Checked;
+                codeRahasia_value.PasswordChar = '⚔';
+            }
+            else if (codeRahasia_value.Text != "" && LihatPassword.Checked)
+            {
+                codeRahasia_value.ForeColor = Color.Black;
+                codeRahasia_value.PasswordChar = '\0';
             }
         }
         private void LihatPassword_CheckedChanged(object sender, EventArgs e)
         {
-            if (LihatPassword.Checked)
+            if (LihatPassword.Checked && codeRahasia_value.ForeColor == Color.Black)
             {
-                codeRahasia_value.UseSystemPasswordChar = false;
+                codeRahasia_value.PasswordChar = '\0';
             }
-            else
+            else if (!LihatPassword.Checked && codeRahasia_value.ForeColor == Color.Black)
             {
-                codeRahasia_value.UseSystemPasswordChar = true;
+                codeRahasia_value.PasswordChar = '⚔';
             }
         }
 
@@ -93,7 +100,7 @@ namespace LoginApp
             namaPetualang_value.ForeColor = Color.Red;
 
             codeRahasia_value.Text = default_code;
-            codeRahasia_value.UseSystemPasswordChar = false;
+            codeRahasia_value.PasswordChar = '\0';
             codeRahasia_value.ForeColor = Color.Red;
         }
     }
